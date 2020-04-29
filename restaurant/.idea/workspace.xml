@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c675734-3126-4fb5-a30e-78753b147325" name="Default Changelist" comment="">
+    <list default="true" id="70f3f4eb-8a38-434b-955a-a096774c94db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/restaurantPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/restaurantPage.html" afterDir="false" />
     </list>
@@ -10,81 +10,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1bAPk7kzfWC0N44ny4oTIfL0hRL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources" />
-    </key>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="8c675734-3126-4fb5-a30e-78753b147325" name="Default Changelist" comment="" />
-      <created>1588072064426</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1588072064426</updated>
-      <workItem from="1588072069022" duration="3594000" />
-      <workItem from="1588119175866" duration="4448000" />
-      <workItem from="1588145136011" duration="2831000" />
-    </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1202" height="147" key="GridCell.Tab.0.bottom" timestamp="1588075829126">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1202" height="147" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588075829126" />
-    <state width="1202" height="147" key="GridCell.Tab.0.center" timestamp="1588075829125">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1202" height="147" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588075829125" />
-    <state width="1202" height="147" key="GridCell.Tab.0.left" timestamp="1588075829125">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1202" height="147" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588075829125" />
-    <state width="1202" height="147" key="GridCell.Tab.0.right" timestamp="1588075829126">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1202" height="147" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588075829126" />
-    <state x="2576" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1588145135832">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2576" y="344" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588145135832" />
   </component>
 </project>
