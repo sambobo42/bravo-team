@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c675734-3126-4fb5-a30e-78753b147325" name="Default Changelist" comment="" />
+    <list default="true" id="8c675734-3126-4fb5-a30e-78753b147325" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/restaurantPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/restaurantPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/classes/org/academiadecodigo/lockdown/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/templates/restaurantList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/templates/restaurantList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/templates/restaurantPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/templates/restaurantPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/templates/test/hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/resources/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/resources/images/group (3).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/resources/images/group (4).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/resources/images/header-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/resources/images/logo-small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/resources/images/paz1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/lockdown/TestController.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,17 +48,18 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="271b2833-d565-4047-b9e5-a2ac0c9b380f" name="Default Changelist" comment="" />
+      <changelist id="8c675734-3126-4fb5-a30e-78753b147325" name="Default Changelist" comment="" />
       <created>1588072064426</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588072064426</updated>
       <workItem from="1588072069022" duration="3594000" />
+      <workItem from="1588119175866" duration="1369000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1202" height="147" key="GridCell.Tab.0.bottom" timestamp="1588075829126">
