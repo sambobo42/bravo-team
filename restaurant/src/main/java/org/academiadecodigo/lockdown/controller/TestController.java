@@ -1,7 +1,10 @@
 package org.academiadecodigo.lockdown.controller;
 
 
+import org.academiadecodigo.lockdown.model.RestaurantModel;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -19,8 +22,14 @@ public class TestController {
     }
 
     @RequestMapping(method = RequestMethod.GET , path = "/register")
-    public String serveTestPageThree(){
+    public String serveRegisterForm(Model model) {
+        model.addAttribute("restaurant", new RestaurantModel());
         return "html-form";
+    }
+
+    @RequestMapping(method = RequestMethod.POST , path = "/register")
+    public String registerSubmit(@ModelAttribute RestaurantModel restaurant){
+        return "redirect:/list";
     }
 
 }

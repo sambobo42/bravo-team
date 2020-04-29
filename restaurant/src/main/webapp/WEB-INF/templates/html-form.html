@@ -20,10 +20,10 @@
             <p> a lot of things missing. Ugly AF. Authentication patterns on the html file itself</p>
         </div>
     
-        <form>
+        <form th:object="${restaurant}" th:action="@{'/register'}" method="post">
             <div class="form-group">
                 <label for="inputBusiness" maxlength="30" pattern="([A-zÀ-ž\s]){2,}">Name of your business</label>
-                <input type="text" th:field="*{business}" class="form-control" id="inputBusiness" placeholder="Name of your business" required>
+                <input type="text" th:field="*{name}" class="form-control" id="inputBusiness" placeholder="Name of your business" required>
               </div>
           
           <div class="form-group">
@@ -33,7 +33,7 @@
           
           <div class="form-group">
             <label for="inputZip">Postal Code</label>
-            <input type="text" th:field="*{zip}" pattern="[0-9]{4}\-[0-9]{4}" class="form-control" id="inputZip" placeholder="Postal code" required>
+            <input type="text" th:field="*{postalCode}" pattern="[0-9]{4}\-[0-9]{4}" class="form-control" id="inputZip" placeholder="Postal code" required>
           </div>
 
           <div class="form-group">
@@ -49,10 +49,10 @@
             </label>
           </div>
 
-<form class="form-inline">
+
           <div style="margin-top:5px" class="form-group">
             <label for="inputName">Name</label>
-            <input type="text" pattern="([A-zÀ-ž\s]){2,}" class="form-control" id="inputName" placeholder="Name">
+            <input type="text" th:field="*{ownerName}" pattern="([A-zÀ-ž\s]){2,}" class="form-control" id="inputName" placeholder="Name">
           </div>
           <div class="form-group">
             <label for="inputEmail">Email</label>
@@ -60,11 +60,11 @@
           </div>
           <div class="form-group">
             <label for="inputPhone">Phone</label>
-            <input type="text" pattern="[9]{1}[0-9]{8}" title="Phone number starting with 9 and remaining 8 digit with 0-9" th:field="*{phone}" class="form-control" id="inputPhone" placeholder="Phone">
+            <input type="text" th:field="*{phone}" pattern="[9]{1}[0-9]{8}" title="Phone number starting with 9 and remaining 8 digit with 0-9" class="form-control" id="inputPhone" placeholder="Phone">
           </div>
 
-        </form>
-          <button type="submit" class="btn btn-default">Submit</button>
+
+          <button type="submit" class="btn btn-outline-success" name="action" value="done">Submit</button>
         </form>
     
     </div>
