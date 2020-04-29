@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c675734-3126-4fb5-a30e-78753b147325" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/templates/restaurantList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/templates/restaurantList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/templates/restaurantPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/templates/restaurantPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/restaurantList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/restaurantList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/restaurantPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/restaurantPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588169040649</updated>
-      <workItem from="1588169042018" duration="253000" />
+      <workItem from="1588169042018" duration="1133000" />
     </task>
     <servers />
   </component>
