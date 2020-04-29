@@ -25,7 +25,7 @@ public class TestController {
 
     @RequestMapping(method = RequestMethod.GET , path = "/")
     public String serveTestPageFour(){
-        return "index";
+        return "home";
     }
 
 
