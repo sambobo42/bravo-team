@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c675734-3126-4fb5-a30e-78753b147325" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/lockdown/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/lockdown/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/spring-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/html-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/html-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/templates/restaurantList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/templates/restaurantList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/templates/restaurantPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/templates/restaurantPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +81,7 @@
       <workItem from="1588072069022" duration="3594000" />
       <workItem from="1588119175866" duration="4448000" />
       <workItem from="1588145136011" duration="2831000" />
-      <workItem from="1588156750871" duration="4352000" />
+      <workItem from="1588156750871" duration="7451000" />
     </task>
     <servers />
   </component>
