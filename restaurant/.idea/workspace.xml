@@ -3,8 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="8c675734-3126-4fb5-a30e-78753b147325" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/lockdown/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/lockdown/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/images/cabin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/images/cake.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/images/circus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/images/game.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/images/safe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/images/submarine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/templates/restaurantList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Restaurant Lockdown/WEB-INF/templates/restaurantPage.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +48,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources" />
     </key>
   </component>
@@ -56,7 +66,7 @@
       <workItem from="1588119175866" duration="4448000" />
       <workItem from="1588145136011" duration="2831000" />
       <workItem from="1588155752132" duration="316000" />
-      <workItem from="1588158096365" duration="8892000" />
+      <workItem from="1588158096365" duration="10146000" />
     </task>
     <servers />
   </component>

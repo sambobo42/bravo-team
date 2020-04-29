@@ -23,4 +23,10 @@ public class TestController {
         return "html-form";
     }
 
+    @RequestMapping(method = RequestMethod.GET , path = "/")
+    public String serveTestPageFour(){
+        return "index";
+    }
+
+
 }
