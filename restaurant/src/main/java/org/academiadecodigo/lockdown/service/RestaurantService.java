@@ -1,16 +1,17 @@
 package org.academiadecodigo.lockdown.service;
 
-import org.academiadecodigo.lockdown.entity.Restaurant;
+
+import org.academiadecodigo.lockdown.model.RestaurantModel;
 
 import java.util.List;
 
 public interface RestaurantService {
 
-    public List<Restaurant> findAll();
+    public List<RestaurantModel> findAll();
 
-    public Restaurant findById(int theId);
+    public RestaurantModel findById(int theId);
 
-    public void save(Restaurant restaurant);
+    public void save(RestaurantModel restaurant);
 
     public void deleteById(int theId);
 }

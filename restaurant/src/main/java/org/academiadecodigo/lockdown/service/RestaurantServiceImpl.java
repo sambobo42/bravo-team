@@ -1,26 +1,28 @@
 package org.academiadecodigo.lockdown.service;
 
-import org.academiadecodigo.lockdown.entity.Restaurant;
-import org.springframework.beans.factory.annotation.Autowired;
+
+import org.academiadecodigo.lockdown.model.RestaurantModel;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
+
 
 @Service
 public class RestaurantServiceImpl implements RestaurantService {
+
 	@Override
-	public List<Restaurant> findAll() {
+	public List<RestaurantModel> findAll() {
 		return null;
 	}
 
 	@Override
-	public Restaurant findById(int theId) {
+	public RestaurantModel findById(int theId) {
 		return null;
 	}
 
 	@Override
-	public void save(Restaurant restaurant) {
+	public void save(RestaurantModel restaurant) {
 
 	}
 

@@ -8,7 +8,8 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
-public abstract class GenericJpaDao<T extends Model> implements RestaurantDao<T> {
+
+public abstract class GenericJpaDao<T> implements Dao<T> {
 
     protected Class<T> modelType;
 
@@ -29,9 +30,6 @@ public abstract class GenericJpaDao<T extends Model> implements RestaurantDao<T>
         CriteriaQuery<T> criteriaQuery = em.getCriteriaBuilder().createQuery(modelType);
         Root<T> root = criteriaQuery.from(modelType);
         return em.createQuery(criteriaQuery).getResultList();
-
-        // Using JPA
-        // return em.createQuery( "from " + modelType.getSimpleName(), modelType).getResultList();
     }
 
     @Override

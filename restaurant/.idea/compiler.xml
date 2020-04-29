@@ -10,5 +10,8 @@
         <module name="restaurantLockdown" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="restaurant" target="10" />
+    </bytecodeTargetLevel>
   </component>
 </project>

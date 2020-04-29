@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 
 import java.util.List;
 
-public interface RestaurantDao<T extends Model> {
+public interface Dao<T> {
     List<T> findAll();
 
     /**
