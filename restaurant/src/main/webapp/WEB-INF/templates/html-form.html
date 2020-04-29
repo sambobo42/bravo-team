@@ -36,21 +36,15 @@
             <input type="text" th:field="*{postalCode}" pattern="[0-9]{4}\-[0-9]{4}" class="form-control" id="inputZip" placeholder="Postal code" required>
           </div>
 
-          <div class="form-group">
-            <label for="inputFile">File input</label>
-            <input type="file" id="inputFile">
-          </div>
-
-
 
           <div class="radioButtons">
 
                 <p style="margin-top:5px" ><label>Take away?</label></p>
 
-                <input type="radio" id="yes" name="take-away" value="yes" required>
+                <input type="radio" id="yes" name="take-away" th:field="*{hasTakeAway}" th:value="yes" required>
                 <label for="yes">Yes</label>
 
-                <input type="radio" id="no" name="take-away" value="yes" required />
+                <input type="radio" id="no" name="take-away" th:field="*{hasTakeAway}" th:value="no" required />
                 <label for="no">No</label>
 
           </div>
