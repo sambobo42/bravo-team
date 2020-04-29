@@ -20,7 +20,7 @@ public class TestController {
 
     @RequestMapping(method = RequestMethod.GET , path = "/register")
     public String serveTestPageThree(){
-        return "restaurantPage";
+        return "html-form";
     }
 
 }
