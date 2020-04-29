@@ -45,4 +45,10 @@ public class TestController {
         return "redirect:/list";
     }
 
+    @RequestMapping(method = RequestMethod.GET , path = "/")
+    public String serveTestPageFour(){
+        return "home";
+    }
+
+
 }
