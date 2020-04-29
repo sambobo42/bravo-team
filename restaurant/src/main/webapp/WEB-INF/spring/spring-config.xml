@@ -34,7 +34,7 @@
         <property name="dataSource" ref="dataSource"/>
 
         <!-- VERY IMPORTANT TO MAKE SURE WE SCAN THE CORRECT PACKAGES!!!! -->
-        <property name="packagesToScan" value="org.academiadecodigo.lockdown.persistence.model"/>
+        <property name="packagesToScan" value="org.academiadecodigo.lockdown"/>
         <!-- VERY IMPORTANT TO MAKE SURE WE SCAN THE CORRECT PACKAGES!!!! -->
 
 
@@ -59,7 +59,7 @@
 
         <property name="driverClassName" value="org.h2.Driver"/>
         <!-- this keeps db running in memory after last connection closes, otherwise it would be wiped-->
-        <property name="url" value="jdbc:h2:mem:javabank;DB_CLOSE_DELAY=-1"/>
+        <property name="url" value="jdbc:h2:mem:restaurant-db;DB_CLOSE_DELAY=-1"/>
         <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
 
         <!-- these are the default h2 username and password, to change use SQL commands -->
@@ -78,6 +78,15 @@
         <property name="contentType" value="text/html; charset=UTF-8"/>
     </bean>
 
+    <!-- Thymeleaf template resolver -->
+    <bean id="templateResolver" class="org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver">
+        <property name="prefix" value="/WEB-INF/templates/"/>
+        <property name="suffix" value=".html"/>
+        <property name="templateMode" value="HTML"/>
+        <property name="cacheable" value="false"/>
+        <property name="characterEncoding" value="UTF-8"/>
+    </bean>
+
     <!-- Thymeleaf Template Engine -->
     <bean id="templateEngine" class="org.thymeleaf.spring4.SpringTemplateEngine">
         <property name="templateResolvers">
@@ -87,14 +96,7 @@
         </property>
     </bean>
 
-    <!-- Thymeleaf template resolver -->
-    <bean id="templateResolver" class="org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver">
-        <property name="prefix" value="/WEB-INF/templates/"/>
-        <property name="suffix" value=".html"/>
-        <property name="templateMode" value="HTML"/>
-        <property name="cacheable" value="false"/>
-        <property name="characterEncoding" value="UTF-8"/>
-    </bean>
+
 
 
 </beans>
