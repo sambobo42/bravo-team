@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd"
+       profile="dev">
+
+    <bean class="org.academiadecodigo.lockdown.SpringBootstrap"/>
+
+    <!--Spring mvc annotations-->
+    <context:component-scan base-package="org.academiadecodigo.lockdown"/>
+    <mvc:default-servlet-handler/>
+    <mvc:annotation-driven/>
+
+    <!-- Could probably move to another XML and import -->
+    <!-- this deals with entity manager and transactions-->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="emFactory" />
+    </bean>
+
+
+    <bean id="emFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+
+        <property name="dataSource" ref="dataSource"/>
+
+        <!-- VERY IMPORTANT TO MAKE SURE WE SCAN THE CORRECT PACKAGES!!!! -->
+        <property name="packagesToScan" value="org.academiadecodigo.lockdown.persistence.model"/>
+        <!-- VERY IMPORTANT TO MAKE SURE WE SCAN THE CORRECT PACKAGES!!!! -->
+
+
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+        </property>
+        <property name="jpaProperties">
+            <map>
+                <entry key="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+
+                <!-- This creates database schema and populates with data -->
+                <entry key="hibernate.hbm2ddl.auto" value="create"/>
+                <entry key="hibernate.hbm2ddl.import_files" value="db/h2-data.sql"/>
+                <entry key="hibernate.hbm2ddl.import_files_sql_extractor"
+                       value="org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor"/>
+
+            </map>
+        </property>
+    </bean>
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+
+        <property name="driverClassName" value="org.h2.Driver"/>
+        <!-- this keeps db running in memory after last connection closes, otherwise it would be wiped-->
+        <property name="url" value="jdbc:h2:mem:javabank;DB_CLOSE_DELAY=-1"/>
+        <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+        <!-- these are the default h2 username and password, to change use SQL commands -->
+        <property name="username" value="sa"/>
+        <property name="password" value=""/>
+    </bean>
+
+
+
+    <!-- This is thymeleaf section -->
+
+    <!-- Thymeleaf View Resolver-->
+    <bean id="viewResolver" class="org.thymeleaf.spring4.view.ThymeleafViewResolver">
+        <property name="templateEngine" ref="templateEngine"/>
+        <property name="characterEncoding" value="UTF-8"/>
+        <property name="contentType" value="text/html; charset=UTF-8"/>
+    </bean>
+
+    <!-- Thymeleaf Template Engine -->
+    <bean id="templateEngine" class="org.thymeleaf.spring4.SpringTemplateEngine">
+        <property name="templateResolvers">
+            <set>
+                <ref bean="templateResolver"/>
+            </set>
+        </property>
+    </bean>
+
+    <!-- Thymeleaf template resolver -->
+    <bean id="templateResolver" class="org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver">
+        <property name="prefix" value="/WEB-INF/templates/"/>
+        <property name="suffix" value=".html"/>
+        <property name="templateMode" value="HTML"/>
+        <property name="cacheable" value="false"/>
+        <property name="characterEncoding" value="UTF-8"/>
+    </bean>
+
+
+</beans>
