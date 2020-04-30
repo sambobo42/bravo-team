@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
           type="text/css"/>
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="../resources/css/styles.css" rel="stylesheet"/>
+    <link href="https://drive.google.com/u/0/uc?id=1SHMDUa-uOFrLl-clVnJeRZ3XWyyq4MvW&export=download" rel="stylesheet"/>
 </head>
 <body id="page-top">
 <!-- Navigation-->
@@ -104,7 +104,7 @@
     <div class="container">
         <!-- Register Heading-->
         <div class="text-center mt-4">
-            <a class="btn btn-xl btn-outline-dark" href="html-form.html"><i
+            <a class="btn btn-xl btn-outline-dark" th:href="@{register}"><i
                     class="fas fa-download mr-2"></i>Register Your Restaurant</a>
         </div>
     </div>
@@ -126,8 +126,7 @@
         <div class="row">
             <div class="col-lg-4 ml-auto"><p class="lead">We are Food-Eat pá and we know that these are tough times!
                 However we are going to bring the community back to you, via you favourite local eateries</p></div>
-            <div class="col-lg-4 mr-auto"><p class="lead">Some more shit saying something similar roughly the same sort
-                of length so that it fits nicely </p></div>
+            <div class="col-lg-4 mr-auto"><p class="lead">So what you say, enjoying the experience so far? Show us your support through an optional donation! </p></div>
         </div>
     </div>
 
@@ -253,7 +252,7 @@
                                 <div class="divider-custom-line"></div>
                             </div>
                             <!-- Portfolio Modal - Image-->
-                            <a href="restaurantPage.html">
+                            <a th:href="@{page}">
                             <img class="img-fluid rounded mb-5" src="https://live.staticflickr.com/65535/49833007592_32ee916c30.jpg"
                                                                 alt=""/>
 

@@ -22,13 +22,8 @@ public class TestController {
         this.restaurantService = restaurantService;
     }
 
-    @RequestMapping(method = RequestMethod.GET , path = "/list")
-    public String serveTestPage(){
-        return "restaurantList";
-    }
-
     @RequestMapping(method = RequestMethod.GET , path = "/page")
-    public String serveTestPageTwo(){
+    public String servePage(){
         return "restaurantPage";
     }
 
@@ -42,13 +37,14 @@ public class TestController {
     public String registerSubmit(@ModelAttribute RestaurantModel restaurant, RedirectAttributes redirectAttributes){
         restaurantService.save(restaurant);
         redirectAttributes.addFlashAttribute("lastAction", "Successfully Added");
-        return "redirect:/list";
+        return "redirect:/";
     }
 
-    @RequestMapping(method = RequestMethod.GET , path = "/")
-    public String serveTestPageFour(){
+    @RequestMapping(method = RequestMethod.GET , path = {"/","home"})
+    public String serveHome(){
         return "home";
     }
+
 
 
 }
