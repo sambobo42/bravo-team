@@ -1,4 +1,4 @@
 # bravo-team
 48H Hackathon
 
-Brainstorming the idea
+Food Eat App concept presented.
